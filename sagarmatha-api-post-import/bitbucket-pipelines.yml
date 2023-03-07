@@ -1,0 +1,7 @@
+pipelines:
+ branches:
+   staging:
+     - step:
+         script:
+           - git push git@git.wpengine.com:production/athlonestage.wpengine.com.git staging
+           - echo "Pushed to Staging"
